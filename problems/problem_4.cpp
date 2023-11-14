@@ -19,11 +19,11 @@ std::string problemSolution4(const std::string &macAddress) {
     }
 
     if (firstOctet == 0xFF) {
-        result = "broadcast";
+        result = "Broadcast";
     } else if (firstOctet % 2 == 0) {
-        result = "unicast";
+        result = "Unicast";
     } else {
-        result = "multicast";
+        result = "Multicast";
     }
 
     // make use of control flow statements
